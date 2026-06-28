@@ -581,6 +581,27 @@ footer::before{
   .hero .grid-fx,.hero .flow-fx,.hero::before,.hero::after,.badge .dot,.sec-tag::before{animation:none}
   .hero .badges,.hero h1,.hero p.lead,.hero-btns,.hero-stats{animation:none}
 }
+/* ========== 学习顶尖企业官网的精修（排版/留白/质感）========== */
+/* 超大 hero 标题（Apple/Stripe/工业站共性：大字号 + 紧字距 + 紧行高）*/
+.hero h1{font-size:clamp(40px,7.2vw,82px);line-height:1.05;letter-spacing:-.03em;margin-bottom:26px}
+.hero p.lead{font-size:clamp(16px,1.4vw,19px);line-height:1.7;max-width:60ch;color:rgba(255,255,255,.78)}
+/* 拉大 section 留白（留白=高级感）*/
+section{padding:clamp(84px,11vh,150px) 0}
+.sec-head{margin-bottom:clamp(46px,6vh,72px)}
+.sec-head h2{font-size:clamp(30px,4.4vw,48px);line-height:1.1;letter-spacing:-.022em;margin-bottom:16px}
+.sec-head p{font-size:16.5px;color:var(--ink-3)}
+/* 工业硬朗卡片质感：弱柔光大模糊，改硬朗投影 + 金色细边 */
+.pcard,.hcard{box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 14px 38px rgba(6,20,33,.10);border:1px solid var(--line)}
+.pcard:hover,.hcard:hover{box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 24px 56px rgba(6,20,33,.20);border-color:rgba(191,163,110,.4)}
+/* 数据数字更有分量 */
+.hero-stats{gap:clamp(28px,4vw,56px)}
+.hero-stats .s b{font-size:clamp(30px,3.6vw,42px);letter-spacing:-.02em}
+/* 按钮更专业（小圆角矩形，顶尖 B2B 工业站风格，弃胶囊感）*/
+.btn-pri,.btn-sec{border-radius:10px;letter-spacing:.2px}
+.cta{border-radius:9px}
+.langbtn{border-radius:9px}
+/* 正文容器最大宽度收敛，行长更易读 */
+.sec-head{max-width:720px}
 </style>
 </head>
 <body class="lang-zh">
